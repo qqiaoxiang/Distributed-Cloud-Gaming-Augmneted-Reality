@@ -1,4 +1,4 @@
-### Distributed Cloud Gaming & Augmented Reality
+## Distributed Cloud Gaming & Augmented Reality
 
 
 > + Deep-sort: store object tracking code (Deepsort)
@@ -7,15 +7,21 @@
 > + AIDetector_pytorch.py: link yolo-v5 and tracking
 > + saved_assets: Store the original image of each frame in the process of SR, the image after SR and the image after object detection
 
-<u> Install <u> 
- git clone https://github.com/qqiaoxiang/Distributed-Cloud-Gaming-Augmneted-Reality.git #clone
- cd Distributed-Cloud-Gaming-Augmented-Reality
- pip install -r requirement.txt
+<u> Install <u>   
+ 
+ git clone https://github.com/qqiaoxiang/Distributed-Cloud-Gaming-Augmneted-Reality.git #clone. 
+ 
+ cd Distributed-Cloud-Gaming-Augmented-Reality. 
+ 
+ pip install -r requirement.txt  
+ 
+ python main.py --video_source <path of source video> --result_path <path to save video>
+ 
 
 
 
 
 
 
-## Relate Work
-### Uses keras library, and pytorch, tensorflow framework
+### Relate Work
+#### Uses keras library, and pytorch, tensorflow framework

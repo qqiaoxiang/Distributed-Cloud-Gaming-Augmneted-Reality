@@ -20,7 +20,7 @@
  
  
 **Notes**   
-The code needs to be executed in a <u>GPU environment<.u> and the files for testing are provided here : gputest.py and torchtest.py
+The code needs to be executed in a <u>GPU environment</u> and the files for testing are provided here : gputest.py and torchtest.py
  
 The command: python gputest.py / torchtest.py
  

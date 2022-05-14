@@ -22,6 +22,7 @@ def main():
         result = det.feedCap(im)
         result = result['frame']
         result = imutils.resize(result, height=500)
+        
         if videoWriter is None:
             fourcc = cv2.VideoWriter_fourcc(
                 'm', 'p', '4', 'v')  # opencv3.0

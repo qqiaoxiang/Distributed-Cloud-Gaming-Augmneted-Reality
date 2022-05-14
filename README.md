@@ -7,21 +7,18 @@
 > + AIDetector_pytorch.py: link yolo-v5 and tracking
 > + saved_assets: Store the original image of each frame in the process of SR, the image after SR and the image after object detection
 
-<u> Install <u>   
+<u>_Install_</u>   
  
- git clone https://github.com/qqiaoxiang/Distributed-Cloud-Gaming-Augmneted-Reality.git #clone. 
+ 1. git clone https://github.com/qqiaoxiang/Distributed-Cloud-Gaming-Augmneted-Reality.git #clone the repository
  
- cd Distributed-Cloud-Gaming-Augmented-Reality. 
+ 2. cd Distributed-Cloud-Gaming-Augmented-Reality 
  
- pip install -r requirement.txt  
+ 3. pip install -r requirement.txt  
  
- python main.py --video_source <path of source video> --result_path <path to save video>
+ 4. python main.py --video_source <path of source video> --result_path <path to save video>
  
-
-
-
-
-
+ <u>_Notes_</u>
+The code needs to be executed in a GPU environment and the files for testing are provided here : gputest.py and torchtest.py 
 
 ### Relate Work
-#### Uses keras library, and pytorch, tensorflow framework
+#### Uses keras library, and Pytorch, Tensorflow framework

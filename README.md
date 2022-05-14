@@ -1,6 +1,6 @@
 # Distributed Cloud Gaming & Augmented Reality
 
-## Deep-sort: store object tracking code (Deepsort)
+ Deep-sort: store object tracking code (Deepsort)
 ## esrgan-tf2_1: prediction model of esrgan
 ## model, urils, weights: yolo-v5 code, for object detection
 ## AIDetector_pytorch.py: link yolo-v5 and tracking

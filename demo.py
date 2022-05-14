@@ -7,7 +7,7 @@ import cv2
 def main():
     name = 'demo'
     det = Detector()
-    cap = cv2.VideoCapture(r'4kMAR\input_video\video2.mp4')
+    cap = cv2.VideoCapture(r'input_video\video2.mp4')
     fps = int(cap.get(5))
     print('fps:', fps)
     t = int(1000/fps)

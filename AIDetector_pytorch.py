@@ -9,6 +9,7 @@ from utils.torch_utils import select_device
 from utils.datasets import letterbox
 
 class Detector(baseDet):
+    
     def __init__(self):
         super(Detector, self).__init__()
         self.init_model()
@@ -18,6 +19,7 @@ class Detector(baseDet):
         self.weights = 'weights/yolov5s.pt'
         self.device = '0' if torch.cuda.is_available() else 'cpu'
         self.device = select_device(self.device)
+        
         model = attempt_load(self.weights, map_location=self.device)
         model.to(self.device).eval()
         model.float()
@@ -44,11 +46,13 @@ class Detector(baseDet):
         pred = pred.float()
         pred = non_max_suppression(pred, self.threshold, 0.4)
         pred_boxes = []
+        
         for det in pred:
             if det is not None and len(det):
                 det[:, :4] = scale_coords(
                     img.shape[2:], det[:, :4], im0.shape).round()
                 print(det.shape)
+                
                 for *x, conf, cls_id in det:
                     lbl = self.names[int(cls_id)]
                     # if not lbl in ['person', 'car', 'truck']:
@@ -56,5 +60,6 @@ class Detector(baseDet):
                     x1, y1 = int(x[0]), int(x[1])
                     x2, y2 = int(x[2]), int(x[3])
                     pred_boxes.append((x1, y1, x2, y2, lbl, conf))
+                    
         return im, pred_boxes
 

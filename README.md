@@ -8,7 +8,7 @@
 > 
 > + **model, urils, weights**: object detection
 > 
-> + **AIDetector_pytorch.py**: link yolo-v5 and tracking
+> + **AIDetector_pytorch.py**: link object detection and tracking
 > 
 > + **saved_assets**: Store the original image of each frame in the process of SR, the image after SR and the image after object detection
 

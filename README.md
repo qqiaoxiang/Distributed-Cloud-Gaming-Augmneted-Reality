@@ -2,11 +2,11 @@
 
 
 
-> + **Deep-sort**: store object tracking code (Deepsort)
+> + **Deep-sort**: object tracking code
 > 
-> + **esrgan-tf2_1**: prediction model of esrgan
+> + **esrgan-tf2_1**: prediction model of SR
 > 
-> + **model, urils, weights**: yolo-v5 code, for object detection
+> + **model, urils, weights**: object detection
 > 
 > + **AIDetector_pytorch.py**: link yolo-v5 and tracking
 > 
@@ -28,5 +28,5 @@ The code needs to be executed in a <u>GPU environment</u> and the files for test
  
 The command: python gputest.py / torchtest.py
  
-The code is able to run on version 2.8.0 of keras and Tensorflow, pytorch 1.11.0, python3 and recommended to run in the conda environment.
+The code is able to run on version 2.8.0 of keras and Tensorflow, Pytorch 1.11.0, Python3.10 and recommended to run in the conda environment.
 

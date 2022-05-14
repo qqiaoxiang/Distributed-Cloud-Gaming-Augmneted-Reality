@@ -55,7 +55,7 @@ def main(args):
         cv2.imwrite(image_path, original_image)
         original_images_names.append(image_name)
         sr_cnt += 1
-    # ---------------------------------------------------------------
+    # ----------------------------------------------------------------
     cap.release()
 
     sr_size= ()

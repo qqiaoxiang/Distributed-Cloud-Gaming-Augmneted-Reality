@@ -8,10 +8,11 @@ import tensorflow as tf
 import tensorflow_hub as hub
 import os
 
-SAVED_MODEL_PATH = "esrgan-tf2_1"
+SAVED_MODEL_PATH = "esrgan-tf2_1" # SR model
 
 def preprocess_image(image_path):
     hr_image = tf.image.decode_image(tf.io.read_file(image_path))
+    
     if hr_image.shape[-1] == 4:
         hr_image = hr_image[..., :-1]
     hr_size = (tf.convert_to_tensor(hr_image.shape[:-1]) // 4) * 4
